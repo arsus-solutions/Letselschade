@@ -1,0 +1,94 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "slug": "verkeersongeval",
+            "name": "Verkeersongeval"
+        },
+        {
+            "id": 2,
+            "slug": "bedrijfsongeval",
+            "name": "Bedrijfsongeval"
+        },
+        {
+            "id": 5,
+            "slug": "dieren",
+            "name": "Ongeval door dieren"
+        },
+        {
+            "id": 7,
+            "slug": "wegdek",
+            "name": "Ongeval door gebrek wegdek"
+        }
+    ],
+    "claimables": [
+        {
+            "slug": "verlies-aan-verdienvermogen",
+            "name": "Verlies aan verdienvermogen",
+            "title": "Verlies van verdienvermogen voor zelfstandigen",
+            "content": "<p>Verlies van verdienvermogen voor Zelfstandigen. Naast het feit dat u als zelfstandige het verlies van de inkomsten van uw eigen bedrijf kunt claimen kan u bovendien ook nog te maken krijgen met:</p><div><ul style='list-style:disc; margin-left: 2rem'><li>De kosten om het bedrijf gedwongen te moeten verkopen zoals de panden en de bedrijfsmiddelen alsmede de schade om lopende werkzaamheden door derden uit te moeten laten voeren.</li><li>Verlies fiscale mogelijkheden, om bepaalde uitgaven die ook de priv&eacute; sfeer raken via de zaak af te mogen trekken</li></ul></div><h2>Verlies van verdienvermogen bij loondienstverhouding</h2><p>Als u door de letselschade niet meer kunt werken in uw huidige job dan verliest u uiteraard geheel of gedeeltelijk uw salaris. Bij dit salaris kunnen er extra zaken zijn die vallen onder uw arbeidsvoorwaarden waardoor u ook verlies van inkomen op kunt lopen door:</p><div><ul style='list-style:disc; margin-left: 2rem'><li>Verlies voordeel door verlies van de spaarloonregeling of de levensloopregeling</li><li>Verlies van de voordelen van een leaseauto</li><li>Verlies en verstoring in de pensioenopbouw</li><li>Verlies van de onkostenvergoeding</li><li>Verlies van reiskostenvergoeding</li><li>Verlies van representatiekosten</li><li>Verlies van salarisverhogingen</li><li>Verlies van eventuele tanti&Atilde;&uml;me, bonus of 13e maand</li><li>Verlies van recht op uitkering bij 12,5 of 25 jarig dienstverband</li><li>Verlies van dekking of bijdrage ziektekostenverzekering of WAO-gat verzekering</li><li>Verlies van bijdrage in scholingskosten</li><li>Verlies van bijdrage werkgever voor de kinderopvang</li><li>Verlies van de door de werkgever betaalde premie voor ongevallenverzekering</li><li>Verlies van fiscale voordelen zoals heffingskortingen en hypotheekrente aftrek in een hogere belastingschijf</li></ul></div>"
+        },
+        {
+            "slug": "huishoudelijke-hulp",
+            "name": "Huishoudelijke hulp",
+            "title": "Kosten van huishoudelijke hulp",
+            "content": "<p>Wanneer men dusdanige letselschade heeft opgelopen heeft en huishoudelijke werkzaamheden niet meer uit kan voeren dan kunnen de kosten voor huishoudelijke hulp worden geclaimd bij de aansprakelijke partij. Dit kan huishoudelijke hulp zijn die verricht wordt door kenissen, buren of familie of indien u de kosten claimt van een proffesionele schoonmaker.</p>"
+        },
+        {
+            "slug": "reiskosten",
+            "name": "Reiskosten",
+            "title": "Reiskosten en begeleidingskosten",
+            "content": "<p>De reiskosten kunnen ook als schadevergoeding worden geclaimd voor bezoek aan de huisarts, de bedrijfsarts en ziekenhuis alsmede de fysiotherapeut. Hieronder vallen ook de taxikosten en de kosten die moeten worden vergoed aan vrienden en kennissen.</p><p>Ook reiskosten die u in de toekomst moet gaan maken omdat u dan niet meer kunt fietsen naar een bepaalde bestemming of het aanschaffen van een grotere of aangepaste auto.</p><p>Indien een ouder voor een kind vrije dagen op moet nemen om een kind met opgelopen letselschade te begeleiden dan komen deze vrije dagen voor verhaal als zijnde letselschade in aanmerking.</p>"
+        },
+        {
+            "slug": "directe",
+            "name": "Directe materi&euml;le schade",
+            "title": "Reiskosten en begeleidingskosten",
+            "content": "<p>Directe materiële schade omvat alle directe, tastbare kosten die u maakt als gevolg van het letsel dat u hebt opgelopen. Dit kan bijvoorbeeld betrekking hebben op beschadigde persoonlijke eigendommen, zoals kleding, een voertuig of elektronica, die beschadigd zijn tijdens het ongeval. Denk bijvoorbeeld aan een kapotte bril of een beschadigde telefoon. Ook schade aan uw auto na een verkeersongeval valt hieronder. Deze kosten worden vaak apart verhaald van immateriële schade, omdat ze een direct financieel verlies vertegenwoordigen.</p>"
+        },
+        {
+            "slug": "kosten-genezing-herstel",
+            "name": "Kosten genezing en herstel",
+            "title": "Reiskosten en begeleidingskosten",
+            "content": "<p>Kosten voor genezing en herstel hebben betrekking op alle medische kosten die u moet maken om te herstellen van uw letsel. Dit omvat behandelingen zoals ziekenhuisopnames, operaties, fysiotherapie, revalidatie, medicijnen en eventuele hulpmiddelen zoals krukken, rolstoelen of braces. Ook kosten voor alternatieve therapieën, zoals chiropractie of psychologische begeleiding, kunnen hieronder vallen als deze bijdragen aan uw herstel. Vaak worden niet alle medische kosten volledig gedekt door de zorgverzekering, waardoor u deze extra uitgaven kunt verhalen op de aansprakelijke partij.</p>"
+        },
+        {
+            "slug": "mantelzorg",
+            "name": "Mantelzorg",
+            "title": "Mantelzorg",
+            "content": "<p>Mantelzorg verwijst naar de zorg en ondersteuning die u van familieleden, vrienden of andere naasten ontvangt tijdens uw herstelperiode. Dit kan gaan om hulp bij dagelijkse activiteiten zoals boodschappen doen, schoonmaken, koken, persoonlijke verzorging, of vervoer naar medische afspraken. Hoewel mantelzorg vaak onbetaald is, kan het een aanzienlijke belasting vormen voor de zorgverlener, zowel financieel als emotioneel. Daarom kunt u in sommige gevallen de kosten of de waarde van deze zorg verhalen, bijvoorbeeld in de vorm van compensatie voor verloren inkomsten van de mantelzorger of andere gemaakte kosten.</p>"
+        },
+        {
+            "slug": "studievertraging",
+            "name": "Studievertraging",
+            "content": "<p>Studievertraging ontstaat wanneer u door een ongeval of letsel niet in staat bent uw studie op tijd af te ronden. Dit kan leiden tot extra studiekosten, zoals collegegeld voor een extra jaar, aanschaf van studiematerialen, of het langer moeten huren van een studentenkamer. Daarnaast kan het ook leiden tot gemiste kansen op de arbeidsmarkt, aangezien u later aan uw carrière begint. Deze kosten en gevolgen van vertraging in uw studie kunnen onderdeel zijn van de schadevergoeding die u kunt verhalen op de aansprakelijke partij.</p>"
+        },
+        {
+            "slug": "smartengeld",
+            "name": "Smartengeld (immateri&euml;le schade)",
+            "title": "Smartengeld",
+            "content": "<p>Naast de direct schadevergoeding door arbeidsongeschiktheid en het verliezen van verdiencapaciteit/ inkomsten kan het slachtoffer ook nog te maken krijgen met emotionele schade zoals pijn en psychische klachten en denk aan de gederfde levensvreugde. Dit laatste heet smartengeld.</p><p>Smartengeld kunt u net zoals de materi&euml;le schade claimen op de schuldige tegenpartij. Je moet natuurlijk wel de aansprakelijkheid aan kunnen tonen. Verder is belangrijk of de tegenpartij verzekerd is voor deze schadeclaim of dat u het rechtstreeks op zijn priv&acute; vermogen moet verhalen. In sommige gevallen kunt u voor mishandeling ook terecht bij het Schadefonds geweldsmisdrijven.</p><p>De schade wordt vaak pas echt afgewikkeld als de letselschade genezen is of als er een eindstadium bereikt is Er kunnen wel voorschotten gedaan worden in afwachting van de definitieve toekenning.</p>"
+        },
+        {
+            "slug": "verlies-zelfwerkzaamheid",
+            "name": "Verlies zelfwerkzaamheid",
+            "title": "Zelfwerkzaamheid",
+            "content": "<p>Onder zelfwerkzaamheid vallen alle werkzaamheden in de privÃ©sfeer die u normaal zelf deed, zoals onderhoud van de tuin schilderwerk aan uw huis of verbouwingen.</p><p>Het gaat hier om schilderwerk, tuinieren, verbouwingen, autowassen, verhuizing, etc. Dingen die een slachtoffer van letselschade normaal wellicht zelf zou doen maar welke als gevolg van een ongeval niet meer mogelijk zijn. Alle op geld waardeerbare schade kunt u claimen.</p>"
+        },
+        {
+            "slug": "economische-kwetsbaarheid",
+            "name": "Economische kwetsbaarheid",
+            "content": "<p>Economische kwetsbaarheid verwijst naar de verminderde positie op de arbeidsmarkt die u kunt ervaren als gevolg van het opgelopen letsel. Wanneer u door het letsel minder goed kunt presteren of bepaalde taken niet meer kunt uitvoeren, kan dit invloed hebben op uw kansen op promotie, loopbaanontwikkeling of zelfs het behoud van uw baan. Daarnaast kan het betekenen dat u minder aantrekkelijk wordt voor toekomstige werkgevers. Deze economische schade, voortvloeiend uit uw verminderde inzetbaarheid of verminderde carrièrekansen, kunt u verhalen als onderdeel van uw letselschadeclaim.</p>"
+        },
+        {
+            "slug": "buitengerechtelijke-bijstand",
+            "name": "Buitengerechtelijke bijstand",
+            "content": "<p>Buitengerechtelijke bijstand verwijst naar de juridische en andere professionele ondersteuning die u krijgt om uw letselschadeclaim af te handelen, zonder dat een rechtszaak noodzakelijk is. Dit kan bijvoorbeeld de kosten omvatten voor een letselschadeadvocaat, een medisch adviseur of een schade-expert die u helpt bij het verzamelen van bewijs, het onderhandelen met de verzekeraar van de tegenpartij, en het bepalen van de juiste schadevergoeding. Deze kosten vallen vaak onder de vergoeding die u kunt verhalen op de aansprakelijke partij, zodat u geen financiële last heeft van de juridische hulp die u nodig heeft.</p>"
+        },
+        {
+            "slug": "overige-schadeposten",
+            "name": "Overige schadeposten",
+            "content": "<p>Overige schadeposten zijn alle extra kosten die u maakt als gevolg van het opgelopen letsel, maar die niet direct onder de andere categorieën vallen. Dit kan bijvoorbeeld gaan om specifieke aanpassingen aan uw woning of auto, zoals het plaatsen van een traplift of een rolstoelvriendelijke inrichting. Ook kunnen kleine, maar noodzakelijke uitgaven hieronder vallen, zoals het aanschaffen van speciale schoenen, braces, nekkragen of andere hulpmiddelen die u nodig heeft tijdens uw herstel. Deze kosten, hoe klein of groot ook, kunnen worden opgenomen in uw letselschadeclaim.</p>"
+        }
+    ]
+}

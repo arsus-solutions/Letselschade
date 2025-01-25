@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea::placeholder {
+    @apply font-title text-3xl;
+}
+
+h1.text-3d {
+    @apply text-center uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    @apply px-5 py-14 mb-5 relative;
+    .header {
+        @apply lg:flex justify-center items-center gap-5;
+        nav {
+            @apply justify-between items-center;
+            .navigation {
+                @apply list-none p-0 lg:flex justify-center items-center font-bold;
+
+                li {
+                    a {
+                        @apply block lg:inline-flex items-center px-8 py-3 text-sm text-white font-medium border-2 border-transparent;
+
+                        &:hover,
+                        &.active {
+                            @apply lg:block border-amber-400 rounded-2xl;
+                        }
+                    }
+                }
+            }
+            .phone {
+                @apply pl-3 py-1 ml-auto text-amber-400 hover:text-green-500 font-bold self-center;
+                .hotline {
+                    @apply hidden 2xl:inline-block;
+                }
+            }
+        }
+    }
+}
+
+.btn-category {
+    @apply text-center relative rounded-lg shadow-xl h-44 w-full;
+
+    &:hover::before,
+    &.active::before {
+        @apply bg-green-700 p-2 rounded-full text-5xl absolute z-50 -right-4 -top-4 text-white border-2 border-white shadow-sm;
+        font: var(--fa-font-solid);
+        content: "\f00c";
+    }
+
+    img {
+        @apply rounded-lg w-full h-full object-cover;
+    }
+
+    &:hover img,
+    &.active img {
+        @apply opacity-50;
+    }
+
+    span.name {
+        @apply text-sky-950 block py-3 bg-opacity-20 bg-white w-full absolute left-0 bottom-0 rounded-b-lg;
+    }
+
+    &:hover span.name,
+    &.active span.name {
+        @apply bg-opacity-100;
+    }
+}
+
+.wrapper {
+    @apply md:container mx-auto md:my-6 bg-slate-950 md:rounded-lg shadow bg-[radial-gradient(circle_at_65%_10%,_#042248_0.1%,_#020617_26%)];
+}
+
+.banner {
+    @apply lg:flex justify-between items-end;
+    .img-banner {
+        @apply flex justify-end max-lg:mt-14;
+        img {
+            @apply shadow-lg rounded-s-3xl;
+        }
+    }
+}
+
+footer {
+    .footer {
+        @apply lg:grid grid-cols-3;
+        ul li a {
+            @apply underline;
+        }
+    }
+}
