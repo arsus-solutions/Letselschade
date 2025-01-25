@@ -21,7 +21,7 @@ header {
         nav {
             @apply justify-between items-center lg:flex;
             .navigation {
-                @apply list-none p-0 justify-center items-center font-bold;
+                @apply list-none p-0 flex justify-center items-center font-bold;
 
                 li {
                     a {
