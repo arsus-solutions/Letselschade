@@ -1,8 +1,8 @@
 @extends('layout.web')
 
 @section('content')
-<div class="py-10 max-md:px-5">
-  <div class="container mx-auto">
+<div class="default-page">
+  <div class="p-24 max-md:px-5 max-md:py-10 bg-white">
       <h2 class="font-logo mb-2 text-3xl text-blue-900">
           Algemene voorwaarden
       </h2>

@@ -27,7 +27,7 @@
                 <div class="header">
                     <a href="/">
                         <img
-                            src="/assets/images/icon.png"
+                            src="/assets/images/logo/sm.png"
                             class="drop-shadow-lg"
                         />
                     </a>
@@ -40,7 +40,7 @@
                             >
                         </h1>
                         <h3 class="text-white">
-                            Doe de letselschadetest en ontdek de hoogte van uw
+                            Doe de letselschadetest en ontdek<br>de hoogte van uw
                             schadevergoeding
                         </h3>
                     </div>

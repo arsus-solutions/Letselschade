@@ -28,7 +28,7 @@ if (inertiaAppElement) {
     });
 } else {
     const menuToggle = document.getElementById("btn-menu-opener");
-    const navMenu = document.querySelector("nav.main");
+    const navMenu = document.querySelector("ul.navigation");
     menuToggle.addEventListener("click", () => {
         if (window.getComputedStyle(navMenu).display === "none") {
             navMenu.style.display = "block"; // Show the content if it's hidden

@@ -13,7 +13,10 @@ const year = computed(() => page.props.yearNow);
         <header>
             <div class="header">
                 <a href="/">
-                    <img src="/assets/images/icon.png" class="drop-shadow-lg" />
+                    <img
+                        src="/assets/images/logo/sm.png"
+                        class="drop-shadow-lg"
+                    />
                 </a>
                 <div>
                     <h1>
@@ -22,7 +25,7 @@ const year = computed(() => page.props.yearNow);
                         >
                     </h1>
                     <h3 class="text-white">
-                        Doe de letselschadetest en ontdek de hoogte van uw
+                        Doe de letselschadetest en ontdek<br />de hoogte van uw
                         schadevergoeding
                     </h3>
                 </div>
@@ -37,7 +40,7 @@ const year = computed(() => page.props.yearNow);
         <footer class="py-12 px-24">
             <div class="text-white">
                 <div class="footer">
-                    <div class="flex">
+                    <div class="flex gap-3 items-center">
                         <Link href="/">
                             <img
                                 src="/assets/images/logo.png"
@@ -45,15 +48,13 @@ const year = computed(() => page.props.yearNow);
                             />
                         </Link>
                         <h1
-                            class="font-logo sm:text-5xl relative"
+                            class="font-logo sm:text-3xl relative"
                             data-text="Letselschade Claimen"
                         >
-                            <Link href="/" class="text-slate-500"
-                                >Letselschade Claimen</Link
-                            >
+                            <Link href="/" class="">Letselschade Claimen</Link>
                         </h1>
                     </div>
-                    <div>
+                    <div class="col-span-2">
                         <p class="mb-3">
                             Alle rechten voorbehouden. Niets van deze website
                             mag zonder nadrukkelijke toestemming en duidelijke

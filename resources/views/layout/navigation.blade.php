@@ -9,9 +9,9 @@
   </div>
   <nav
       ref="webNav"
-      class="main max-lg:hidden lg:flex"
+      class="main"
   >
-      <ul class="navigation">
+      <ul class="navigation max-lg:hidden lg:flex">
           <li class="max-lg:py-3">
               <a
                   class="{!! request()->path() === '/' ? 'active': '' !!}"

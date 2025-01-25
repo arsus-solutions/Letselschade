@@ -19,9 +19,9 @@ header {
     .header {
         @apply lg:flex justify-center items-center gap-5;
         nav {
-            @apply justify-between items-center;
+            @apply justify-between items-center lg:flex;
             .navigation {
-                @apply list-none p-0 lg:flex justify-center items-center font-bold;
+                @apply list-none p-0 justify-center items-center font-bold;
 
                 li {
                     a {
@@ -37,10 +37,24 @@ header {
             .phone {
                 @apply pl-3 py-1 ml-auto text-amber-400 hover:text-green-500 font-bold self-center;
                 .hotline {
-                    @apply hidden 2xl:inline-block;
+                    @apply lg:hidden xl:inline-block;
                 }
             }
         }
+    }
+}
+
+.default-page {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply mb-6;
+    }
+
+    p {
+        @apply mb-5;
     }
 }
 
@@ -64,7 +78,7 @@ header {
     }
 
     span.name {
-        @apply text-sky-950 block py-3 bg-opacity-20 bg-white w-full absolute left-0 bottom-0 rounded-b-lg;
+        @apply text-sky-950 block py-3 bg-opacity-85 lg:bg-opacity-20 bg-white w-full absolute left-0 bottom-0 rounded-b-lg;
     }
 
     &:hover span.name,
@@ -89,7 +103,7 @@ header {
 
 footer {
     .footer {
-        @apply lg:grid grid-cols-3;
+        @apply lg:grid grid-cols-3 gap-5 place-items-center;
         ul li a {
             @apply underline;
         }
