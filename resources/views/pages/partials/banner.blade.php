@@ -2,43 +2,43 @@
   <div class="flex-grow">
       <div class="lg:pl-10">
           <div
-              class="mt-10 2xl:text-2xl text-white font-title"
+              class="text-white font-title"
           >
-              <ul class="fa-ul">
+              <ul class="fa-ul ps-6">
                   <li class="drop-shadow">
                       <span class="fa-li"
                           ><i
                               class="fa-solid fa-check text-green-500"
                           ></i></span
-                      >snel - de letselschade-expert neemt contact op
+                      ><strong>Snel</strong> - Onze letselschade-expert neemt direct contact met u op.
                   </li>
                   <li class="drop-shadow">
                       <span class="fa-li"
                           ><i
                               class="fa-solid fa-check text-green-500"
                           ></i></span
-                      >makkelijk - korte vragen
+                      ><strong>Makkelijk</strong> - Slechts een paar korte vragen.
                   </li>
                   <li class="drop-shadow">
                       <span class="fa-li"
                           ><i
                               class="fa-solid fa-check text-green-500"
                           ></i></span
-                      >direct uitslag van de test - via email
+                      ><strong>Direct resultaat</strong> - Ontvang de uitslag van uw test direct via e-mail.
                   </li>
                   <li class="drop-shadow">
                       <span class="fa-li"
                           ><i
                               class="fa-solid fa-check text-green-500"
                           ></i></span
-                      >gratis en vrijblijvend advies
+                      ><strong>Gratis en vrijblijvend</strong> Geen verplichtingen, enkel advies op maat.
                   </li>
                   <li class="drop-shadow">
                       <span class="fa-li"
                           ><i
                               class="fa-solid fa-check text-green-500"
                           ></i></span
-                      >wij beschikken over een landelijke dekking
+                      ><strong>Landelijke dekking</strong> Wij staan overal in Nederland voor u klaar.
                   </li>
               </ul>
           </div>
@@ -46,15 +46,12 @@
               class="py-3 px-8 bottom-0"
           >
               <h3
-                  class="text-3xl text-white mt-5 font-black"
+                  class="text-3xl mt-5 font-black"
               >
                   Start de letselschadetest
               </h3>
               <p class="mb-5 text-white">
-                  Wat is de aard van uw ongeval?
-                  <span class="text-slate-400"
-                      >(Kies &eacute;&eacute;n)</span
-                  >
+                Ontdek binnen enkele minuten wat uw schadevergoeding kan zijn. Kies uw ongevalstype om te beginnen:
               </p>
               @include('pages.partials.categories')
           </div>

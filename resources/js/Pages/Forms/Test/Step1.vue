@@ -1,7 +1,7 @@
 <template>
     <div class="py-10 max-md:px-5">
         <div class="md:px-24">
-            <h2 class="font-logo mb-2 text-3xl text-blue-900">
+            <h2 class="font-logo mb-2 text-3xl">
                 Aansprakelijkheid
                 <span v-if="letselschade.category"
                     >- {{ letselschade.category }}</span

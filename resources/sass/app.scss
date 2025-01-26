@@ -14,6 +14,28 @@ h1.text-3d {
     text-rendering: optimizeLegibility;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    @apply text-amber-400;
+}
+
+p {
+    @apply mb-5;
+}
+
+.bg-white {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply text-slate-700;
+    }
+}
+
 header {
     @apply px-5 py-14 mb-5 relative;
     .header {
@@ -52,9 +74,14 @@ header {
     h5 {
         @apply mb-6;
     }
+}
 
-    p {
-        @apply mb-5;
+.test {
+    .block {
+        h3 {
+            @apply 2xl:text-2xl font-title;
+        }
+        @apply p-5 rounded-lg shadow-lg xl:inline-block xl:w-1/4 flex-grow;
     }
 }
 
@@ -92,12 +119,15 @@ header {
 }
 
 .banner {
-    @apply lg:flex justify-between items-end;
+    @apply lg:flex justify-between items-start py-14;
     .img-banner {
         @apply flex justify-end max-lg:mt-14;
         img {
             @apply shadow-lg rounded-s-3xl;
         }
+    }
+    ul li {
+        @apply mb-3;
     }
 }
 

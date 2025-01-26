@@ -236,7 +236,20 @@ export default {
             testResults: null,
         };
     },
+    mounted() {
+        // Add the beforeunload event listener when the component is mounted
+        window.addEventListener("beforeunload", this.handleBeforeUnload);
+    },
+    beforeUnmount() {
+        // Remove the event listener when the component is destroyed
+        window.removeEventListener("beforeunload", this.handleBeforeUnload);
+    },
     methods: {
+        handleBeforeUnload(event) {
+            // Show the default browser confirmation dialog
+            event.preventDefault();
+            event.returnValue = ""; // Required for Chrome/Firefox/Edge to show the dialog
+        },
         handleRadio(model, value) {
             this.letselschade[model] = value;
         },

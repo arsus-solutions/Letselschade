@@ -2,29 +2,27 @@
 
 @section('content')
     @include('pages.partials.banner')
-    <div class="p-24 max-md:px-5">
-        <p class="text-xl font-title text-white italic font-bold">
+    {{-- <div class="p-24 max-md:px-5 bg-white">
+        <p class="text-xl font-title italic font-bold">
             Als u door een ongeval te maken krijgt met tijdelijk of blijvend letsel dan kan dat grote financiële gevolgen hebben. Het is dan verstandig om in contact te komen met een letselschade expert die de schade voor u gaat verhalen.
         </p>
-    </div>
+    </div> --}}
     <div class="p-24 bg-white">
         <div>
             <div class="lg:grid grid-cols-3 gap-5 place-items-center">
                 <div class="max-lg:mb-5 col-span-2">
-                    <h2 class="font-bold text-slate-700 text-3xl mb-3">
-                        Wat te doen bij letselschade?
+                    <h2 class="font-bold text-3xl mb-3 font-title">
+                        Wat is Letselschade en Waarom De Test Doen?
                     </h2>
-                    <p class="text-2xl">
-                        Door direct de
+                    <p class="text-xl">
+                        Een ongeval kan grote financiële gevolgen hebben, zeker als u te maken krijgt met tijdelijk of blijvend letsel. Het is belangrijk om snel actie te ondernemen. Door het invullen van de
                         <a href="/letselschadetest"
                             >letselschadetest</a
                         >
-                        in te vullen zet u de door u te vorderen schade
-                        direct in werking. Zonder (verplichtingen) Er wordt
-                        door ons een indicatie worden gegeven van de
-                        letselschadevergoeding.
+                        zet u direct de eerste stap naar het verhalen van uw schade. Wij geven u binnen enkele minuten een indicatie van uw mogelijke schadevergoeding – volledig gratis en vrijblijvend.
                     </p>
-                    <p class="text-2xl">Wij geven u als belangrijke tip mee ook als u lichte klachten heeft toch te claimen. Immers, als de klachten over gaan dan is dit alleen maar prettig. Maar als de klachten erger worden dan hebben wij uw wettelijke rechten gereserveerd.</p>
+                    <h3 class="text-2xl font-title">Waarom Nu Claimen, Zelfs Bij Lichte Klachten?</h3>
+                    <p class="text-xl">Ook bij lichte klachten is het verstandig om een claim in te dienen. Als de klachten verdwijnen, is dat alleen maar goed. Maar als ze verergeren, heeft u uw rechten alvast veiliggesteld. Wacht dus niet en start vandaag nog met de test!</p>
                 </div>
                 <div class="flex items-center justify-end">
                     <img
@@ -47,11 +45,11 @@
                     />
                 </div>
                 <div class="col-span-2">
-                    <h2 class="font-bold text-3xl mb-3">
-                        Ik ben niet tevreden over mijn huidige behandelaar
+                    <h2 class="font-title text-3xl mb-3">
+                        Niet Tevreden met Uw Huidige Letselschadebehandelaar?
                     </h2>
                     <p class="text-2xl">
-                        Het kan voorkomen dat uw letselschadezaak al in behandeling is bij een letselschade advocaat/jurist/specialist, letselschadekantoor of rechtsbijstandverzekering en dat u hier niet tevreden over bent. Vaak horen wij dat de communicatie slecht verloopt, de claim te lang duurt, het letselschadebedrag te laag is of dat er andere klachten zijn. U kunt ervoor kiezen om uw zaak over te laten nemen door een van onze letselschade-experts. Zij zullen het maximale uit uw claim halen en zorgen dat u krijgt waar u recht op heeft en dit op een prettige aanspreekbare manier.
+                        Bent u al in behandeling bij een andere letselschadespecialist, maar niet tevreden over hoe uw zaak verloopt? Misschien duurt het te lang, is het letselschadebedrag te laag, of is de communicatie onvoldoende. Wij kunnen uw zaak eenvoudig overnemen en ervoor zorgen dat u krijgt waar u recht op heeft – met heldere communicatie en maximale inzet.
                     </p>
                 </div>
             </div>
@@ -65,7 +63,7 @@
                         Wat kost het?
                     </h2>
                     <p class="text-2xl">
-                        U hoeft niets te betalen, omdat de juridische kosten geheel worden vergoed door de tegenpartij. Dit is in de Nederlandse wet zo geregeld. <br>Bij ons betaalt u geen vergoeding in welk geval dan ook.
+                        Bij ons hoeft u <strong>niets te betalen</strong>. De juridische kosten worden volledig vergoed door de tegenpartij, zoals vastgelegd in de Nederlandse wet. U ontvangt de beste juridische hulp, zonder kosten of risico&rsquo;s voor u.
                     </p>
                 </div>
                 <img
@@ -75,5 +73,10 @@
                 />
             </div>
         </div>
+    </div>
+    <div class="p-24 text-white">
+        <h3 class="font-title text-3xl mb-3 text-center">
+            <a href="{{ url('letselschadetest') }}" class="underline">Start de Letselschadetest</a> nu en ontdek uw mogelijke schadevergoeding zonder enige verplichting. Het is makkelijk, snel en geheel gratis!
+        </h3>
     </div>
 @endsection

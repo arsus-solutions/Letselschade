@@ -20,7 +20,7 @@ const year = computed(() => page.props.yearNow);
                 </a>
                 <div>
                     <h1>
-                        <a href="/" class="text-white text-xl font-black"
+                        <a href="/" class="text-xl font-black"
                             >Letselschade Claimen</a
                         >
                     </h1>
@@ -48,7 +48,7 @@ const year = computed(() => page.props.yearNow);
                             />
                         </Link>
                         <h1
-                            class="font-logo sm:text-3xl relative"
+                            class="font-logo sm:text-3xl relative text-amber-400"
                             data-text="Letselschade Claimen"
                         >
                             <Link href="/" class="">Letselschade Claimen</Link>

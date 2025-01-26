@@ -35,7 +35,7 @@
                         <h1>
                             <a
                                 href="/"
-                                class="text-white text-xl font-black"
+                                class="text-xl font-black"
                                 >Letselschade Claimen</a
                             >
                         </h1>
@@ -64,7 +64,7 @@
                                 <h1
                                     class="font-logo sm:text-4xl relative"
                                 >
-                                    <a href="/" class="text-slate-500"
+                                    <a href="/" class="text-amber-400"
                                         >Letselschade Claimen</a
                                     >
                                 </h1>
