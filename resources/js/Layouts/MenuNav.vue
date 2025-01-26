@@ -8,10 +8,10 @@
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <nav ref="webNav" class="main lg:flex">
+        <nav ref="webNav" class="main">
             <ul
-                class="navigation"
-                :class="{ 'max-lg:block': isOpen, 'max-lg:hidden': !isOpen }"
+                class="navigation lg:flex"
+                :class="{ block: isOpen, 'max-lg:hidden': !isOpen }"
             >
                 <li class="max-lg:py-3" v-for="menu in menus" :key="menu.slug">
                     <NavLink
