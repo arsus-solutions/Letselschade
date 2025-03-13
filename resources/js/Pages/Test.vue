@@ -512,7 +512,7 @@ export default {
             // Fire the conversion event when the button is clicked
             console.log("track conversion is triggered");
             window.gtag("event", "conversion", {
-                send_to: "AW-11561362909/K7m6CLzNi4caEN3L8Ygr",
+                send_to: "AW-10859171119/K7m6CLzNi4caEN3L8Ygr",
                 value: 1.0,
                 currency: "EUR",
             });

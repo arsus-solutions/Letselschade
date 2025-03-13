@@ -7,9 +7,7 @@
         <title>{{ config('app.name', 'Letsleschade') }}</title>
 		<link rel="icon" href="{{ url('assets/images/logo.png') }}" />
 
-        <!-- Google tag (gtag.js) --> 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11561362909"></script> 
-        <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11561362909'); </script> 
+        <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10859171119"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10859171119'); </script> 
 
         @if (session('success_msg'))
             <!-- Event snippet for Leadformulier indienen conversion page --> 
