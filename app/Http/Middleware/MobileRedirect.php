@@ -12,7 +12,7 @@ class MobileRedirect
         // Check if the request comes from a mobile device
         if ($this->isMobile()) {
             // Redirect to an external domain if it's a mobile device
-            return redirect()->away('https://m.letselschadetest.nl');
+            return redirect()->away('https://m.letselschadeclaimen.nl/');
         }
 
         // Continue with the next middleware if not mobile
