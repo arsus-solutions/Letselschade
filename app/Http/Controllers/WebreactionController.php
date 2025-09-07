@@ -94,7 +94,7 @@ class WebreactionController extends Controller
         ];
 
         $webreactionData = [
-            'webmodule_id' => 1,
+            'webmodule_id' => 8,
             'lead_webreaction_type_id' => 1,
             'domain_name' => $request->getHost(),
             'lead_type_id' => $validated['lead_type_id'],
