@@ -1,51 +1,50 @@
 <div class="lg:ml-10">
-  <div class="menu-toggle-wrapper absolute right-7 top-8 lg:hidden">
+  <!-- Mobile Menu Toggle -->
+  <div class="menu-toggle-wrapper absolute right-7 top-8 lg:hidden z-50">
       <button
-          class="mr-5 my-3 py-3 px-5 border border-blue-50 text-white rounded active:bg-blue-300"
+          class="py-3 px-5 border-2 border-teal-500 text-slate-900 bg-white rounded-lg hover:bg-teal-50 active:bg-teal-100 transition-colors shadow-md"
           id="btn-menu-opener"
       >
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars text-xl"></i>
       </button>
   </div>
-  <nav
-      ref="webNav"
-      class="main"
-  >
-      <ul class="navigation max-lg:hidden lg:flex">
-          <li class="max-lg:py-3">
+
+  <!-- Navigation - FIXED LAYOUT -->
+  <nav ref="webNav" class="main flex items-center justify-between gap-6">
+      <ul class="navigation max-lg:hidden flex items-center gap-2">
+          <li>
               <a
-                  class="{!! request()->path() === '/' ? 'active': '' !!}"
+                  class="block px-4 py-2 rounded-lg font-medium transition-all duration-200 {{ request()->path() === '/' ? 'bg-teal-500 text-white shadow-md hover:bg-teal-600' : 'text-slate-700 hover:text-teal-600 hover:bg-teal-50' }}"
                   href="{{ url('/') }}"
-                  {!! request()->path() === '/' !!}
-                  >Home</a
-              >
+              >Home</a>
           </li>
-          <li class="max-lg:py-3">
+          <li>
               <a
-                  class="{!! request()->path() === 'letselschadetest' ? 'active': '' !!}"
+                  class="block px-4 py-2 rounded-lg font-medium transition-all duration-200 {{ request()->path() === 'letselschadetest' ? 'bg-teal-500 text-white shadow-md hover:bg-teal-600' : 'text-slate-700 hover:text-teal-600 hover:bg-teal-50' }}"
                   href="{{ url('letselschadetest') }}"
-                  >Letselschadetest</a
-              >
+              >Letselschadetest</a>
           </li>
-          <li class="max-lg:py-3">
+          <li>
               <a
-                  class="{!! request()->path() === 'letselschadeclaimen' ? 'active': '' !!}"
+                  class="block px-4 py-2 rounded-lg font-medium transition-all duration-200 {{ request()->path() === 'letselschadeclaimen' ? 'bg-teal-500 text-white shadow-md hover:bg-teal-600' : 'text-slate-700 hover:text-teal-600 hover:bg-teal-50' }}"
                   href="{{ url('letselschadeclaimen') }}"
-                  >Letselschade Claimen</a
-              >
+              >Letselschade Claimen</a>
           </li>
-          <li class="max-lg:py-3">
+          <li>
               <a
-                  class="{!! request()->path() === 'contact' ? ' active': '' !!}"
+                  class="block px-4 py-2 rounded-lg font-medium transition-all duration-200 {{ request()->path() === 'contact' ? 'bg-teal-500 text-white shadow-md hover:bg-teal-600' : 'text-slate-700 hover:text-teal-600 hover:bg-teal-50' }}"
                   href="{{ url('contact') }}"
-                  >Contact</a
-              >
+              >Contact</a>
           </li>
       </ul>
+
+      <!-- Phone Number CTA - NOW ON SAME LINE -->
       <a
           href="tel:0880767676"
-          class="phone"
-          ><i class="fas fa-phone mr-2"></i><span class="hotline">088 - 076 76 76</span></a
+          class="phone flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-200 shadow-lg hover:shadow-xl whitespace-nowrap"
       >
+          <i class="fas fa-phone"></i>
+          <span class="hotline">088 - 076 76 76</span>
+      </a>
   </nav>
 </div>

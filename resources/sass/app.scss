@@ -5,13 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
-textarea::placeholder {
-    @apply font-title text-3xl;
+// ============================================
+// BASE STYLES
+// ============================================
+
+html {
+    scroll-behavior: smooth;
 }
 
-h1.text-3d {
-    @apply text-center uppercase;
-    text-rendering: optimizeLegibility;
+textarea::placeholder {
+    @apply font-title text-3xl;
 }
 
 h1,
@@ -19,25 +22,312 @@ h2,
 h3,
 h4,
 h5 {
-    @apply text-amber-400;
+    @apply text-slate-900 font-bold;
 }
 
 p {
-    @apply mb-5;
+    @apply mb-5 text-slate-700;
 }
 
 .bg-white {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        @apply text-slate-700;
+    h1, h2, h3, h4, h5 {
+        @apply text-slate-900;
     }
 }
 
+// ============================================
+// MODERN COMPONENTS
+// ============================================
+
+// Button System
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center gap-2;
+        @apply px-6 py-3 rounded-lg font-semibold;
+        @apply transition-all duration-300;
+        @apply focus:outline-none focus:ring-4;
+        
+        &-primary {
+            @apply bg-gradient-to-r from-orange-500 to-orange-600;
+            @apply text-white shadow-lg shadow-orange-500/30;
+            @apply hover:shadow-xl hover:shadow-orange-500/50;
+            @apply hover:-translate-y-0.5 hover:scale-105;
+            @apply focus:ring-orange-300;
+            @apply border-2 border-orange-600;
+        }
+        
+        &-secondary {
+            @apply bg-gradient-to-r from-teal-500 to-cyan-600;
+            @apply text-white shadow-lg shadow-teal-500/30;
+            @apply hover:shadow-xl hover:shadow-teal-500/50;
+            @apply hover:-translate-y-0.5 hover:scale-105;
+            @apply focus:ring-teal-300;
+        }
+        
+        &-outline {
+            @apply bg-transparent text-slate-700;
+            @apply border-2 border-slate-700;
+            @apply hover:bg-slate-700 hover:text-white;
+            @apply focus:ring-slate-300;
+        }
+
+        &-white {
+            @apply bg-white text-slate-900;
+            @apply border-2 border-slate-200;
+            @apply hover:border-teal-500 hover:shadow-lg;
+            @apply focus:ring-teal-300;
+        }
+        
+        &-lg {
+            @apply px-8 py-4 text-lg rounded-xl;
+        }
+        
+        &-sm {
+            @apply px-4 py-2 text-sm;
+        }
+    }
+}
+
+// Card Components
+@layer components {
+    .card {
+        @apply bg-white rounded-xl shadow-md;
+        @apply border border-slate-200;
+        @apply transition-all duration-300;
+        @apply p-6;
+        
+        &:hover {
+            @apply shadow-xl border-teal-300;
+            @apply -translate-y-1;
+        }
+        
+        &-primary {
+            @apply border-l-4 border-l-teal-500;
+        }
+
+        &-accent {
+            @apply border-l-4 border-l-orange-500;
+        }
+        
+        &-dark {
+            @apply bg-slate-900 text-white border-slate-800;
+            
+            &:hover {
+                @apply border-teal-500;
+            }
+        }
+
+        &-glass {
+            @apply bg-white/80 backdrop-blur-md;
+            @apply border-white/20;
+        }
+    }
+}
+
+// Badge Components
+@layer components {
+    .badge {
+        @apply inline-flex items-center gap-1.5;
+        @apply px-3 py-1 rounded-full text-xs font-semibold;
+        
+        &-success {
+            @apply bg-teal-100 text-teal-700 border border-teal-300;
+        }
+        
+        &-warning {
+            @apply bg-orange-100 text-orange-700 border border-orange-300;
+        }
+        
+        &-info {
+            @apply bg-blue-100 text-blue-700 border border-blue-300;
+        }
+        
+        &-danger {
+            @apply bg-red-100 text-red-700 border border-red-300;
+        }
+
+        &-primary {
+            @apply bg-slate-100 text-slate-700 border border-slate-300;
+        }
+    }
+}
+
+// Alert Components
+@layer components {
+    .alert {
+        @apply p-4 rounded-lg mb-4;
+        @apply flex items-start gap-3;
+        @apply border-l-4;
+        
+        &-success {
+            @apply bg-teal-50 border-teal-500 text-teal-900;
+            
+            i { @apply text-teal-600; }
+        }
+        
+        &-warning {
+            @apply bg-orange-50 border-orange-500 text-orange-900;
+            
+            i { @apply text-orange-600; }
+        }
+        
+        &-info {
+            @apply bg-blue-50 border-blue-500 text-blue-900;
+            
+            i { @apply text-blue-600; }
+        }
+        
+        &-error {
+            @apply bg-red-50 border-red-500 text-red-900;
+            
+            i { @apply text-red-600; }
+        }
+        
+        i {
+            @apply text-xl flex-shrink-0 mt-0.5;
+        }
+    }
+}
+
+// Form Components
+@layer components {
+    .form-group {
+        @apply mb-6;
+        
+        label {
+            @apply block text-sm font-semibold text-slate-900 mb-2;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="password"],
+        textarea,
+        select {
+            @apply w-full px-4 py-3 rounded-lg;
+            @apply bg-white border-2 border-slate-300;
+            @apply text-slate-900 placeholder-slate-400;
+            @apply focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/20;
+            @apply transition-all duration-300;
+            
+            &:disabled {
+                @apply bg-slate-100 cursor-not-allowed opacity-50;
+            }
+
+            &.error {
+                @apply border-red-500 focus:border-red-500 focus:ring-red-500/20;
+            }
+        }
+        
+        .error-message {
+            @apply text-red-600 text-sm mt-1 flex items-center gap-1;
+        }
+
+        .help-text {
+            @apply text-slate-500 text-sm mt-1;
+        }
+    }
+    
+    .checkbox-group,
+    .radio-group {
+        @apply flex items-center gap-2;
+        
+        input {
+            @apply w-5 h-5 rounded border-2 border-slate-300;
+            @apply text-teal-500 focus:ring-2 focus:ring-teal-500/20;
+            @apply cursor-pointer;
+        }
+        
+        label {
+            @apply mb-0 cursor-pointer text-slate-700;
+        }
+    }
+}
+
+// Section Components
+@layer components {
+    .section {
+        @apply py-12 lg:py-20;
+        
+        &-hero {
+            @apply py-20 lg:py-32;
+            @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900;
+            @apply text-white;
+        }
+        
+        &-primary {
+            @apply bg-gradient-to-br from-teal-50 to-cyan-50;
+        }
+        
+        &-light {
+            @apply bg-white;
+        }
+        
+        &-dark {
+            @apply bg-slate-900 text-white;
+        }
+    }
+}
+
+// Feature Box
+@layer components {
+    .feature-box {
+        @apply bg-white p-6 rounded-xl shadow-md;
+        @apply border-2 border-transparent;
+        @apply transition-all duration-300;
+        @apply group;
+
+        &:hover {
+            @apply border-teal-500 shadow-xl -translate-y-1;
+        }
+
+        .feature-icon {
+            @apply w-14 h-14 rounded-lg mb-4;
+            @apply bg-gradient-to-br from-teal-500 to-cyan-600;
+            @apply flex items-center justify-center;
+            @apply text-white text-2xl;
+            @apply group-hover:scale-110 transition-transform;
+        }
+
+        h3 {
+            @apply text-xl font-bold text-slate-900 mb-3;
+        }
+
+        p {
+            @apply text-slate-600 mb-0;
+        }
+    }
+}
+
+// Trust Indicator
+@layer components {
+    .trust-indicator {
+        @apply flex items-center gap-3 p-4;
+        @apply bg-teal-50 rounded-lg border border-teal-200;
+
+        i {
+            @apply text-2xl text-teal-600;
+        }
+
+        .trust-text {
+            .trust-label {
+                @apply text-xs text-slate-600 uppercase tracking-wide;
+            }
+
+            .trust-value {
+                @apply text-lg font-bold text-slate-900;
+            }
+        }
+    }
+}
+
+// ============================================
+// EXISTING CUSTOM COMPONENTS
+// ============================================
+
 header {
-    @apply px-5 py-14 mb-5 relative;
+    @apply p-5 relative;
     .header {
         @apply lg:flex justify-center items-center gap-5;
         nav {
@@ -47,17 +337,20 @@ header {
 
                 li {
                     a {
-                        @apply block lg:inline-flex items-center px-8 py-3 text-sm text-white font-medium border-2 border-transparent;
+                        @apply block lg:inline-flex items-center px-8 py-3 text-sm font-medium border-2 border-transparent;
+                        @apply text-slate-700;
 
                         &:hover,
                         &.active {
-                            @apply lg:block border-amber-400 rounded-2xl;
+                            @apply lg:block border-teal-500 rounded-2xl bg-teal-50;
                         }
                     }
                 }
             }
             .phone {
-                @apply pl-3 py-1 ml-auto text-amber-400 hover:text-green-500 font-bold self-center;
+                @apply pl-3 py-1 ml-auto font-bold self-center;
+                @apply text-orange-500 hover:text-orange-600;
+                
                 .hotline {
                     @apply lg:hidden xl:inline-block;
                 }
@@ -67,11 +360,7 @@ header {
 }
 
 .default-page {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
+    h1, h2, h3, h4, h5 {
         @apply mb-6;
     }
 }
@@ -87,10 +376,18 @@ header {
 
 .btn-category {
     @apply text-center relative rounded-lg shadow-xl h-44 w-full;
+    @apply border-2 border-transparent;
+    @apply transition-all duration-300;
+
+    &:hover,
+    &.active {
+        @apply border-teal-500;
+    }
 
     &:hover::before,
     &.active::before {
-        @apply bg-green-700 p-2 rounded-full text-5xl absolute z-50 -right-4 -top-4 text-white border-2 border-white shadow-sm;
+        @apply p-2 rounded-full text-5xl absolute z-50 -right-4 -top-4 text-white border-2 border-white shadow-lg;
+        @apply bg-gradient-to-br from-teal-500 to-cyan-600;
         font: var(--fa-font-solid);
         content: "\f00c";
     }
@@ -105,17 +402,13 @@ header {
     }
 
     span.name {
-        @apply text-sky-950 block py-3 bg-opacity-85 lg:bg-opacity-20 bg-white w-full absolute left-0 bottom-0 rounded-b-lg;
+        @apply text-slate-900 block py-3 bg-opacity-90 bg-white w-full absolute left-0 bottom-0 rounded-b-lg font-semibold;
     }
 
     &:hover span.name,
     &.active span.name {
-        @apply bg-opacity-100;
+        @apply bg-teal-500 text-white;
     }
-}
-
-.wrapper {
-    @apply md:container mx-auto md:my-6 bg-slate-950 md:rounded-lg shadow bg-[radial-gradient(circle_at_65%_10%,_#042248_0.1%,_#020617_26%)];
 }
 
 .banner {
@@ -123,19 +416,139 @@ header {
     .img-banner {
         @apply flex justify-end max-lg:mt-14;
         img {
-            @apply shadow-lg rounded-s-3xl;
+            @apply shadow-xl rounded-3xl border-4 border-white;
         }
     }
     ul li {
-        @apply mb-3;
+        @apply mb-3 flex items-start gap-2;
+        
+        &::before {
+            content: "✓";
+            @apply text-teal-500 font-bold mr-2;
+        }
     }
 }
 
-footer {
-    .footer {
-        @apply lg:grid grid-cols-3 gap-5 place-items-center;
-        ul li a {
-            @apply underline;
-        }
+// ============================================
+// UTILITY CLASSES
+// ============================================
+
+@layer utilities {
+    .text-gradient-primary {
+        @apply bg-gradient-to-r from-teal-500 to-cyan-600;
+        @apply bg-clip-text text-transparent;
+    }
+
+    .text-gradient-accent {
+        @apply bg-gradient-to-r from-orange-500 to-orange-600;
+        @apply bg-clip-text text-transparent;
+    }
+    
+    .glass {
+        @apply bg-white/80 backdrop-blur-md;
+        @apply border border-white/20;
+    }
+
+    .glass-dark {
+        @apply bg-slate-900/80 backdrop-blur-md;
+        @apply border border-slate-700/30;
+    }
+    
+    .glow-teal {
+        @apply shadow-lg shadow-teal-500/50;
+    }
+
+    .glow-orange {
+        @apply shadow-lg shadow-orange-500/50;
+    }
+}
+
+// ============================================
+// ANIMATIONS
+// ============================================
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+// Loading Spinner
+.loading-spinner {
+    @apply inline-block w-10 h-10;
+    @apply border-4 border-slate-300 border-t-teal-500;
+    @apply rounded-full;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+// ============================================
+// RESPONSIVE & PRINT
+// ============================================
+
+@media (max-width: 1023px) {
+    .navigation {
+        @apply flex-col space-y-2;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    .no-print {
+        @apply hidden;
+    }
+    
+    body {
+        @apply bg-white text-black;
     }
 }

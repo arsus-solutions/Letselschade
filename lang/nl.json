@@ -2,17 +2,17 @@
     "categories": [
         {
             "id": 1,
-            "slug": "verkeersongeval",
+            "slug": "verkeer",
             "name": "Verkeersongeval"
         },
         {
             "id": 2,
-            "slug": "bedrijfsongeval",
+            "slug": "bedrijf",
             "name": "Bedrijfsongeval"
         },
         {
             "id": 5,
-            "slug": "dieren",
+            "slug": "dier",
             "name": "Ongeval door dieren"
         },
         {

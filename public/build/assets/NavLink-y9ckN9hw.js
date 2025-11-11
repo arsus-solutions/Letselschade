@@ -1,0 +1,1 @@
+import{h as r,f as o,o as c,G as n,n as l}from"./app-Cztl_bX5.js";const i=["href"],u={__name:"NavLink",props:{href:{type:String,required:!0},active:{type:Boolean}},setup(e){const s=e,t=r(()=>s.active?"active":"");return(a,p)=>(c(),o("a",{href:e.href,class:l(`${t.value}`)},[n(a.$slots,"default")],10,i))}};export{u as _};

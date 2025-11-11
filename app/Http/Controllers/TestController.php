@@ -16,4 +16,10 @@ class TestController extends Controller
             'selectedCategory' => $page
         ]);
     }
+
+    public function letselschadeForm($slug = null) {
+        return Inertia::render('LetselschadeForm', [
+            'selectedCategory' => $slug
+        ]);
+    }
 }
