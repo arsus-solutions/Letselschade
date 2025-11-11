@@ -30,6 +30,7 @@
 
         <!-- Fonts -->
         @vite(['resources/js/app.js', 'resources/sass/app.scss', 'resources/css/app.css'])
+        @stack('styles')
     </head>
     <body class="font-sans antialiased bg-slate-50">
         <!-- Top Bar with Trust Indicators -->
@@ -291,5 +292,6 @@
             </div>
             <div class="absolute inset-0 bg-orange-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
         </a>
+        @stack('scripts')
     </body>
 </html>

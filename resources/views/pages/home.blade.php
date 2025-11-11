@@ -70,7 +70,10 @@
             </div>
         </div>
     </div>
-    <div class="p-24 text-white">
+    <div class="p-24">
+        @include('pages.partials.reviews', ['reviews' => $reviews])
+    </div>
+    <div class="p-24">
         <h3 class="font-title text-3xl mb-3 text-center">
             <a href="{{ url('letselschadetest') }}" class="underline hover:text-teal-400 transition-colors">Start de Letselschadetest</a> nu en ontdek uw mogelijke schadevergoeding zonder enige verplichting. Het is makkelijk, snel en geheel gratis!
         </h3>

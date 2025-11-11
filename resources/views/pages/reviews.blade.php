@@ -57,7 +57,7 @@
 
                 <!-- Pagination -->
                 <div class="mt-8">
-                    {{ $reviews->links() }}
+                    {{ $reviews->links('pagination::tailwind') }}
                 </div>
             @else
                 <div class="bg-white rounded-lg shadow-md p-8 text-center">

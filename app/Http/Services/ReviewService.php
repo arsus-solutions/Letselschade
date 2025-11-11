@@ -439,4 +439,9 @@ class ReviewService
             ]
         ];
     }
+
+    public function slides(int $limit)
+    {
+        return array_slice($this->index(), 0, $limit);
+    }
 }
