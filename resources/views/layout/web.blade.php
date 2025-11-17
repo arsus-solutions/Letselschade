@@ -8,6 +8,20 @@
         <title>{{ config('app.name', 'Letsleschade') }}</title>
         <link rel="icon" href="{{ url('assets/images/logo.png') }}" />
 
+        <!-- Google Consent Mode (MUST be first) -->
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        // Set default consent to denied (GDPR requirement)
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied', 
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });
+        </script>
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10859171119"></script>
         <script>
@@ -292,6 +306,8 @@
             </div>
             <div class="absolute inset-0 bg-orange-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
         </a>
+
+        @include('layout.cookie')
         @stack('scripts')
     </body>
 </html>
