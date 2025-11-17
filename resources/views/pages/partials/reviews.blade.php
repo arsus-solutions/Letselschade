@@ -54,6 +54,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+        <a href="{{ url('reviews') }}" class="mt-8 inline-block text-teal-600 hover:text-teal-800 font-medium">Bekijk alle reviews &rarr;</a>
     </div>
 </div>
 
